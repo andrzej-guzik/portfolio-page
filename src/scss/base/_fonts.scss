@@ -1,0 +1,17 @@
+//Font Awesome
+@import "./node_modules/font-awesome/scss/font-awesome";
+
+//Devicon
+@import "./node_modules/devicon/devicon.min";
+
+//Google Fonts
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400|Montserrat');
+
+@font-face {
+    font-family: 'MontserratLight';
+    src: url('../assets/fonts/montserrat-light-webfont.woff2') format('woff2'),
+         url('../assets/fonts/montserrat-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
