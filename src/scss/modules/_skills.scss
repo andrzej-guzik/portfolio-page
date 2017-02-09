@@ -1,0 +1,29 @@
+.skills {
+	&__item {
+		margin-bottom: vr(1);
+
+		&__header {
+			display: flex;
+			align-items: center;
+
+			h3 {
+				padding-left: 1.625rem;
+			}
+		}
+
+		p {
+			padding-top: .5rem;
+		}
+	}
+
+	&__icon {
+		width: 6.25rem;
+	}
+
+	&__img {
+		img {
+			display: block;
+			margin: 0 auto;
+		}
+	}
+}

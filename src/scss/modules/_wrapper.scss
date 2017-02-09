@@ -1,0 +1,7 @@
+.wrapper {
+    padding: vr(2);
+
+    @include media-breakpoint-up(lg) {
+        padding: vr(4);
+    }
+}

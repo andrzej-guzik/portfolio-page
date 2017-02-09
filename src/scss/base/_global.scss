@@ -15,12 +15,35 @@ img {
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: $font-family-headers;
+	font-weight: 300;
 }
 
 h1 {
   @include typi($h1-font-map);
+  font-weight: 500;
+   @include media-breakpoint-up(md) {
+	   font-weight: 300;
+   }
+}
+
+h2 {
+  @include typi($h2-font-map);
+  padding-bottom: vr(1);
+  text-align: center;
+
+  @include media-breakpoint-up(md) {
+	  padding-bottom: vr(2);
+  }
+}
+
+h3 {
+	font-weight: 500;
+	font-size: 1.25rem;
+	line-height: 1.2;
+	color: $gray;
 }
 
 p {
+	font-weight: 300;
 	color: $paragraphs-color;
 }

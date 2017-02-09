@@ -5,8 +5,9 @@
 	background-size: cover;
 	width: 100%;
 	min-height: 25rem;
-	
+
 	@include media-breakpoint-down(sm) {
+		padding-top: vr(4);
 		@include overlay(black, .4);
 	}
 
@@ -38,14 +39,20 @@
 
 		h1 {
 			margin: 0;
-			padding-bottom: 2rem;
+			padding-bottom: 1rem;
 			text-transform: uppercase;
+
+			@include media-breakpoint-up(md) {
+				padding-bottom: 2rem;
+			}
 		}
 
 		h2 {
-			font-size: 1.25rem;
+			font-weight: 500;
+			font-size: 1.125rem;
 			margin: 0;
 			padding-bottom: .5rem;
+			text-align: left;
 
 			@include media-breakpoint-up(lg) {
 				font-size: 1.625rem;
@@ -53,10 +60,18 @@
 		}
 
 		&__divider {
-			width: 17.375rem;
+			width: 10rem;
 			height: 1px;
-			background: rgba($dark, .5);
+			background: rgba($light, .5);
 			margin-bottom: 1rem;
+
+			@include media-breakpoint-up(sm) {
+				width: 17.375rem;
+			}
+
+			@include media-breakpoint-up(md) {
+				background: rgba($dark, .5);
+			}
 		}
 	}
 
