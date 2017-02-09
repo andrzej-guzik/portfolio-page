@@ -1,3 +1,44 @@
-
 //Font Awesome path
 $fa-font-path: "../assets/fonts";
+
+//Colors
+$light: #f7f8f9;
+$dark: #272a2b;
+$light-gray: #747474;
+$gray: #48454c;
+$blue: #375d81;
+
+$accent-color: $blue;
+
+$paragraphs-color: $light-gray;
+$nav-links: $gray;
+
+//Typi settings for responsive typography
+$breakpoints: (
+  small: 576px,
+  medium: 768px,
+  large: 992px
+);
+
+$typi: (
+  null: (16px, 1.4)
+);
+
+$h1-font-map: (
+  null: (36px, 1.4),
+  medium: 44px,
+  large: 57px
+);
+
+$h2-font-map: (
+  null: (30px, 1.4),
+  medium: 40px,
+  large: 48px
+);
+
+// Fonts
+$font-family-primary: "Roboto", sans-serif;
+$font-family-secondary: "Montserrat Light", sans-serif;
+
+$font-family-body: $font-family-primary;
+$font-family-headers: $font-family-secondary;

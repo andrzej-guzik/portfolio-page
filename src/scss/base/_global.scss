@@ -1,0 +1,26 @@
+html, body {
+    height: 100%;
+}
+
+body {
+	margin: 0;
+    font-family: $font-family-body;
+    text-rendering: optimizeLegibility;
+	@include typi($typi);
+}
+
+img {
+    max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $font-family-headers;
+}
+
+h1 {
+  @include typi($h1-font-map);
+}
+
+p {
+	color: $paragraphs-color;
+}

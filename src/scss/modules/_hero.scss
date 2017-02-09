@@ -1,0 +1,100 @@
+.hero {
+	display: flex;
+	align-items: center;
+	background: url("../assets/images/hero.jpg") left center;
+	background-size: cover;
+	width: 100%;
+	min-height: 25rem;
+	
+	@include media-breakpoint-down(sm) {
+		@include overlay(black, .4);
+	}
+
+	@include media-breakpoint-up(md) {
+			height: 100%;
+	}
+
+	&__content {
+		padding: 3rem 0;
+		padding-left: 2.8rem;
+
+		@include media-breakpoint-up(md) {
+			background: rgba(#d5d7d7, .6);
+		}
+
+		@include media-breakpoint-up(lg) {
+			position: absolute;
+			right: 0;
+			width: 35.875rem;
+		}
+
+		h1, h2 {
+			color: $light;
+
+			@include media-breakpoint-up(md) {
+				color: $dark;
+			}
+		}
+
+		h1 {
+			margin: 0;
+			padding-bottom: 2rem;
+			text-transform: uppercase;
+		}
+
+		h2 {
+			font-size: 1.25rem;
+			margin: 0;
+			padding-bottom: .5rem;
+
+			@include media-breakpoint-up(lg) {
+				font-size: 1.625rem;
+			}
+		}
+
+		&__divider {
+			width: 17.375rem;
+			height: 1px;
+			background: rgba($dark, .5);
+			margin-bottom: 1rem;
+		}
+	}
+
+	@include media-breakpoint-up(lg) {
+		&__shape1 {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 19.375rem;
+			height: 10.625rem;
+			background: #e9eae9;
+		}
+
+		&__shape2 {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 10rem;
+			height: 4.75rem;
+			background: #d5d7d7;
+		}
+
+		&__shape3 {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 12.125rem;
+			height: 6.5rem;
+			background: #e9eae9;
+		}
+
+		&__shape4 {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 16.675rem;
+			height: 14.125rem;
+			background: rgba(#31353d, .1);
+		}
+	}
+}
