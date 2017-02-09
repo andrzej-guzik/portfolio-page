@@ -6,6 +6,35 @@
 	}
 }
 
+@mixin section-number($number) {
+	position: relative;
+	&:after {
+		content: $number;
+		position: absolute;
+		top: -1.7rem;
+		left: 0;
+		font-weight: 500;
+		font-size: 5rem;
+		color: rgba(#3e606f, .05);
+
+		@include media-breakpoint-up(sm) {
+			top: -2rem;
+			left: 20%;
+		}
+
+		@include media-breakpoint-up(md) {
+			top: -1.8rem;
+			left: 25%;
+		}
+
+		@include media-breakpoint-up(lg) {
+			top: -3.125rem;;
+			left: 30%;
+			font-size: 7.5rem;
+		}
+	}
+}
+
 @mixin overlay($color, $alpha) {
 	position: relative;
 	z-index: 1;

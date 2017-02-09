@@ -1,4 +1,8 @@
 .skills {
+	h2 {
+		@include section-number("01");
+	}
+	
 	&__item {
 		margin-bottom: vr(1);
 
@@ -8,6 +12,7 @@
 
 			h3 {
 				padding-left: 1.625rem;
+				position: relative;
 			}
 		}
 

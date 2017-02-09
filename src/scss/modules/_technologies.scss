@@ -1,0 +1,48 @@
+.technologies {
+	background: url("../assets/images/bg_tech.jpg") top center;
+	background-size: cover;
+
+	h2 {
+		@include section-number("02");
+	}
+
+	&__icon {
+		padding: 1.2rem;
+
+		@include media-breakpoint-up(sm) {
+			padding: 2rem;
+		}
+
+		@include media-breakpoint-up(md) {
+			margin-bottom: 1rem;
+		}
+	}
+
+	.tech-icon {
+		stroke: $accent-color;
+		stroke-width: 2;
+		stroke-dasharray: 1000;
+		stroke-dashoffset: 1000;
+	}
+
+	path {
+		fill: transparent;
+	}
+}
+
+//Animations for tech icons
+@keyframes offset {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fill-it {
+  100% {
+    fill: transparent;
+  }
+}
+
+path {
+	animation: offset 4s .3s linear forwards, fill-it 1s 4s forwards;
+}
