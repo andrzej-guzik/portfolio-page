@@ -28,6 +28,12 @@
 	path {
 		fill: transparent;
 	}
+
+	&--drawing {
+		path {
+			animation: offset 5s .6s linear forwards, fill-it 1s 5s forwards;
+		}
+	}
 }
 
 //Animations for tech icons
@@ -41,8 +47,4 @@
   100% {
     fill: transparent;
   }
-}
-
-path {
-	animation: offset 4s .3s linear forwards, fill-it 1s 4s forwards;
 }
