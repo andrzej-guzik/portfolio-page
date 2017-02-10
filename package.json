@@ -39,6 +39,7 @@
   "dependencies": {
     "bootstrap": "^4.0.0-alpha.6",
     "devicon": "^2.0.0",
-    "font-awesome": "^4.7.0"
+    "font-awesome": "^4.7.0",
+    "slick-carousel": "^1.6.0"
   }
 }

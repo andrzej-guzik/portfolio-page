@@ -8,8 +8,12 @@
 	<meta name="description" content="Andrzej Guzik - Front-end Developer, Web Designer">
 	<meta name="keywords" content="front-end, developer, web-design, designer, html, css, photoshop">
 	<title>Andrzej Guzik | Front-end Developer &amp; Web Designer</title>
-	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400|Rubik:300,500" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400|Rubik:300,500">
 	<!-- build:css css/styles.min.css -->
+	<link rel="stylesheet" href="css/devicon.css">
+	<link rel="stylesheet" href="css/devicon-colors.css">
+	<link rel="stylesheet" href="slick/slick.css">
+	<link rel="stylesheet" href="slick/slick-theme.css">
 	<link rel="stylesheet" href="css/styles.css">
 	<!-- endbuild -->
 </head>
@@ -24,7 +28,7 @@
 				<li class="site-nav__item"><a href="#"><span class="site-nav__item__icon fa fa-home"></span>Home</a></li>
 				<li class="site-nav__item"><a href="#umiejetnosci"><span class="site-nav__item__icon fa fa-diamond"></span>Umiejętności</a></li>
 				<li class="site-nav__item"><a href="#technologie"><span class="site-nav__item__icon fa fa-code"></span>Technologie</a></li>
-				<li class="site-nav__item"><a href="#"><span class="site-nav__item__icon fa fa-desktop"></span>Portfolio</a></li>
+				<li class="site-nav__item"><a href="#portfolio"><span class="site-nav__item__icon fa fa-desktop"></span>Portfolio</a></li>
 				<li class="site-nav__item"><a href="#"><span class="site-nav__item__icon fa fa-envelope-o"></span>Kontakt</a></li>
 			</ul>
 		</nav>
@@ -139,14 +143,113 @@
 			</div>
 		</div>
 	</section>
-	
+	<section id="portfolio" class="portfolio wrapper">
+		<div class="container">
+			<h2>Portfolio</h2>
+			<div class="row">
+				<div class="col-12">
+					<div class="portfolio-slider">
+						<div class="portfolio-item">
+							<h3>Sparta Gym Web Template</h3>
+							<ul class="portfolio-item__icons">
+								<li class="portfolio-item__icon"><i class="devicon-photoshop-plain colored"></i></li>
+								<li class="portfolio-item__icon"><i class="devicon-html5-plain colored"></i></li>
+								<li class="portfolio-item__icon"><i class="devicon-css3-plain colored"></i></li>
+								<li class="portfolio-item__icon"><i class="devicon-sass-original colored"></i></li>
+								<li class="portfolio-item__icon"><i class="devicon-jquery-plain colored"></i></li>
+								<li class="portfolio-item__icon"><i class="devicon-gulp-plain colored"></i></li>
+								<li class="portfolio-item__icon"><i class="devicon-bootstrap-plain colored"></i></li>
+							</ul>
+							<div class="buttons">
+								<a href="https://andrzej-guzik.github.io/sparta-gym-template" target="_blank" class="btn buttons__item"><span class="btn__icon fa fa-globe"></span>Zobacz</a>
+								<a href="https://github.com/andrzej-guzik/sparta-gym-template" target="_blank" class="btn buttons__item"><span class="btn__icon fa fa-github"></span>GitHub</a>
+							</div>
+							<img src="assets/images/sparta-gym-showcase.png" alt="responsywny widok szablonu www Sparta Gym">
+						</div>
+
+						<div class="portfolio-item">
+							<h3>Starter Web Template</h3>
+							<ul class="portfolio-item__icons">
+								<li class="portfolio-item__icon"><i class="devicon-photoshop-plain colored"></i></li>
+								<li class="portfolio-item__icon"><i class="devicon-html5-plain colored"></i></li>
+								<li class="portfolio-item__icon"><i class="devicon-css3-plain colored"></i></li>
+								<li class="portfolio-item__icon"><i class="devicon-gulp-plain colored"></i></li>
+								<li class="portfolio-item__icon"><i class="devicon-jquery-plain colored"></i></li>
+							</ul>
+							<div class="buttons">
+								<a href="https://andrzej-guzik.github.io/starter-website-template" class="btn buttons__item" target="_blank"><span class="btn__icon fa fa-globe"></span>Zobacz</a>
+								<a href="https://github.com/andrzej-guzik/starter-website-template" target="_blank" class="btn buttons__item"><span class="btn__icon fa fa-github"></span>GitHub</a>
+							</div>
+							<img src="assets/images/starter-showcase.png" alt="responsywny widok szablonu www Starter">
+						</div>
+
+						<div class="portfolio-item">
+							<h3>Xavier Web Template</h3>
+							<ul class="portfolio-item__icons">
+								<li class="portfolio-item__icon"><i class="devicon-photoshop-plain colored"></i></li>
+								<li class="portfolio-item__icon"><i class="devicon-html5-plain colored"></i></li>
+								<li class="portfolio-item__icon"><i class="devicon-css3-plain colored"></i></li>
+								<li class="portfolio-item__icon"><i class="devicon-gulp-plain colored"></i></li>
+								<li class="portfolio-item__icon"><i class="devicon-jquery-plain colored"></i></li>
+							</ul>
+							<div class="buttons">
+								<a href="https://andrzej-guzik.github.io/xavier-website-template" class="btn buttons__item" target="_blank"><span class="btn__icon fa fa-globe"></span>Zobacz</a>
+								<a href="https://github.com/andrzej-guzik/xavier-website-template" class="btn buttons__item" target="_blank"><span class="btn__icon fa fa-github"></span>GitHub</a>
+							</div>
+							<img src="assets/images/xavier-showcase.png" alt="responsywny widok szablonu www Xavier">
+						</div>
+
+						<div class="portfolio-item">
+							<h3>Weather App</h3>
+							<ul class="portfolio-item__icons">
+								<li class="portfolio-item__icon"><i class="devicon-html5-plain colored"></i></li>
+								<li class="portfolio-item__icon"><i class="devicon-css3-plain colored"></i></li>
+								<li class="portfolio-item__icon"><i class="devicon-javascript-plain colored"></i></li>
+							</ul>
+							<div class="buttons">
+								<a href="http://utter-coach.surge.sh/" target="_blank" class="btn buttons__item"><span class="btn__icon fa fa-globe"></span>Zobacz</a>
+								<a href="https://github.com/andrzej-guzik/SimpleWeatherApp" target="_blank" class="btn buttons__item"><span class="btn__icon fa fa-github"></span>GitHub</a>
+							</div>
+							<img src="assets/images/weather-app-showcase.png" alt="responsywny widok pogodowej aplikacji www">
+						</div>
+					</div>
+
+					<div class="pagination">
+    					<ul>
+							<li class="pagination__next"><span class="fa fa-angle-right"></span></li>
+				      		<li class="pagination__prev"><span class="fa fa-angle-left"></span></li>
+    					</ul>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
 	<!-- build:js1 js/vendor.min.js -->
 	<script src="js/vendor/jquery.min.js"></script>
 	<script src="js/vendor/tether.min.js"></script>
-	<script src="js/vendor/bootstrap.min.js"></script>
+	<script src="js/vendor/slick.min.js"></script>
 	<!-- endbuild -->
 	<!-- build:js2 js/scripts.min.js -->
 	<!-- <script src="temp/js/scripts.js"></script> -->
 	<!-- endbuild -->
+
+	<script>
+		$(document).ready(function() {
+			$(".portfolio-slider").slick({
+				autoplay: true,
+				centerMode: true,
+				prevArrow: $('.pagination__prev'),
+	 			nextArrow: $('.pagination__next'),
+				lazyLoad: "ondemand",
+				dots: true,
+				infinite: true,
+				speed: 500,
+				slidesToShow: 1,
+				adaptiveHeight: true
+			});
+		});
+	</script>
+
 </body>
 </html>

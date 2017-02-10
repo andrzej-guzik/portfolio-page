@@ -1,0 +1,92 @@
+.portfolio {
+	position: relative;
+
+	h2 {
+		@include section-number("03");
+	}
+
+	.portfolio-item {
+		text-align: center;
+
+		h3 {
+			padding-bottom: .5rem;
+
+			@include media-breakpoint-up(md) {
+				font-size: 1.875rem;
+			}
+		}
+
+		&__icons {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		&__icon {
+			display: inline-block;
+			font-size: 1.5rem;
+			padding-right: .5rem;
+		}
+
+		img {
+			margin: 0 auto;
+
+			@include media-breakpoint-up(xl) {
+				padding-bottom: vr(2);
+			}
+		}
+	}
+
+	.buttons {
+		padding: vr(2);
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+
+		@include media-breakpoint-up(md) {
+			flex-direction: row;
+		}
+
+		&__item {
+			margin-bottom: 1rem;
+
+			@include media-breakpoint-up(md) {
+				margin-right: 3rem;
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	.pagination {
+		display: none;
+
+		@include media-breakpoint-up(xl) {
+			display: block;
+			ul {
+				list-style: none;
+
+				li {
+					display: inline-block;
+					font-size: 3rem;
+					color: rgba($light-gray, .3);
+					cursor: pointer;
+				}
+			}
+
+			&__prev, &__next {
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+			}
+
+			&__prev {
+				left: 0;
+			}
+
+			&__next {
+				right: 0;
+			}
+		}
+	}
+}
