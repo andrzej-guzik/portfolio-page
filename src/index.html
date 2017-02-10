@@ -290,18 +290,21 @@
 
 	<script>
 		$(document).ready(function() {
-			$(".portfolio-slider").slick({
-				autoplay: true,
-				centerMode: true,
-				prevArrow: $('.pagination__prev'),
-	 			nextArrow: $('.pagination__next'),
-				lazyLoad: "ondemand",
-				dots: true,
-				infinite: true,
-				speed: 500,
-				slidesToShow: 1,
-				adaptiveHeight: true
-			});
+			var viewportWidth = window.innerWidth;
+			var MQ = 992;
+			if (viewportWidth > MQ) {
+				$(".portfolio-slider").slick({
+					autoplay: true,
+					centerMode: true,
+					prevArrow: $('.pagination__prev'),
+		 			nextArrow: $('.pagination__next'),
+					lazyLoad: "ondemand",
+					dots: true,
+					infinite: true,
+					speed: 500,
+					slidesToShow: 1
+				});
+			}			
 		});
 	</script>
 

@@ -16,8 +16,8 @@
 	}
 
 	&__content {
-		padding: 3rem 0;
-		padding-left: 2.8rem;
+		margin: 0 auto;
+		padding: 2rem;
 
 		@include media-breakpoint-up(md) {
 			background: rgba(#d5d7d7, .6);
@@ -33,6 +33,7 @@
 			color: $light;
 
 			@include media-breakpoint-up(md) {
+				padding-left: 3rem;
 				color: $dark;
 			}
 		}
@@ -71,6 +72,7 @@
 
 			@include media-breakpoint-up(md) {
 				background: rgba($dark, .5);
+				margin-left: 3rem;
 			}
 		}
 	}

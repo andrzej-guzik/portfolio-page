@@ -8,18 +8,18 @@
 
 @mixin section-number($number) {
 	position: relative;
+
 	&:after {
 		content: $number;
 		position: absolute;
 		top: -1.7rem;
-		left: 0;
+		left: 50%;
 		font-weight: 500;
 		font-size: 5rem;
 		color: rgba(#3e606f, .1);
 
-		@include media-breakpoint-up(sm) {
-			top: -2rem;
-			left: 20%;
+		@include media-breakpoint-down(md) {
+				transform: translateX(-50%);
 		}
 
 		@include media-breakpoint-up(md) {
