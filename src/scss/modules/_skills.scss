@@ -1,8 +1,9 @@
 .skills {
+	background: $white;
 	h2 {
 		@include section-number("01");
 	}
-	
+
 	&__item {
 		margin-bottom: vr(1);
 

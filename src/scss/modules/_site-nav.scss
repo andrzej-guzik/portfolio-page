@@ -86,6 +86,11 @@
 				&:hover {
 					color: $accent-color;
 				}
+
+				&:focus {
+					color: $light;
+					background: $accent-color;
+				}
 			}
 		}
 
