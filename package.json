@@ -37,11 +37,14 @@
     "webpack": "^2.2.1"
   },
   "dependencies": {
+    "axios": "^0.15.3",
     "bootstrap": "^4.0.0-alpha.6",
     "devicon": "^2.0.0",
     "font-awesome": "^4.7.0",
+    "form-serialize": "^0.7.1",
     "jquery-smooth-scroll": "^2.1.2",
     "slick-carousel": "^1.6.0",
+    "validator": "^6.2.1",
     "waypoints": "^4.0.1"
   }
 }

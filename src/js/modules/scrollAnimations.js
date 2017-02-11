@@ -10,15 +10,13 @@ class ScrollAnimations {
 	}
 
 	setItems() {
-		const animateItemsArr = Array.from(this.animateItems);
-		animateItemsArr.map((item) => {
+		[...this.animateItems].map((item) => {
 			item.classList.add("animate-item");
 		});
 	}
 
 	createAnimations() {
-		const animateItemsArr = Array.from(this.animateItems);
-		animateItemsArr.map((item) => {
+		[...this.animateItems].map((item) => {
 			new Waypoint({
 				element: item,
 				handler: () => {
