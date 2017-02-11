@@ -1,3 +1,4 @@
+import "picturefill";
 import SiteNav from "./modules/siteNav";
 import ScrollAnimations from "./modules/scrollAnimations";
 import FormValid from "./modules/formValid";
