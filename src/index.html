@@ -283,31 +283,9 @@
 	<!-- build:js1 js/vendor.min.js -->
 	<script src="js/vendor/jquery.min.js"></script>
 	<script src="js/vendor/tether.min.js"></script>
-	<script src="js/vendor/slick.min.js"></script>
 	<!-- endbuild -->
 	<!-- build:js2 js/scripts.min.js -->
 	<script src="temp/js/scripts.js"></script>
 	<!-- endbuild -->
-
-	<script>
-		$(document).ready(function() {
-			var viewportWidth = window.innerWidth;
-			var MQ = 992;
-			if (viewportWidth > MQ) {
-				$(".portfolio-slider").slick({
-					autoplay: true,
-					centerMode: true,
-					prevArrow: $('.pagination__prev'),
-		 			nextArrow: $('.pagination__next'),
-					lazyLoad: "ondemand",
-					dots: true,
-					infinite: true,
-					speed: 500,
-					slidesToShow: 1
-				});
-			}
-		});
-	</script>
-
 </body>
 </html>
