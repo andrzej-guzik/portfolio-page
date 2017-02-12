@@ -7,17 +7,17 @@
 	<meta name="author" content="Andrzej Guzik">
 	<meta name="description" content="Andrzej Guzik - Front-end Developer, Web Designer">
 	<meta name="keywords" content="front-end, developer, web-design, designer, html, css, photoshop">
+	<meta property="og:site_name" content="Andrzej Guzik | Front-end Developer &amp; Web Designer">
 	<title>Andrzej Guzik | Front-end Developer &amp; Web Designer</title>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400|Rubik:300,500">
 	<!-- build:css css/styles.min.css -->
 	<link rel="stylesheet" href="css/devicon.css">
 	<link rel="stylesheet" href="css/devicon-colors.css">
-	<link rel="stylesheet" href="slick/slick.css">
-	<link rel="stylesheet" href="slick/slick-theme.css">
 	<link rel="stylesheet" href="css/styles.css">
 	<!-- endbuild -->
 </head>
 <body>
+	<a href="#content" class="visuallyhidden" tabindex="1">Przejdź do treści</a>
 	<header class="site-header">
 		<div class="site-header__menu-icon">
 			<div class="site-header__menu-icon__middle">
@@ -47,7 +47,7 @@
 		<div class="hero__shape3"></div>
 		<div class="hero__shape4"></div>
 	</section>
-	<main>
+	<main id="content" tabindex="-1">
 		<section id="umiejetnosci" class="skills wrapper animate">
 			<div class="container">
 				<h2>Umiejętności</h2>
@@ -56,22 +56,22 @@
 						<div class="row ">
 							<div class="col-md-6 col-xl-12 skills__item">
 								<div class="skills__item__header">
-									<img src="assets/images/icons/levels.svg" class="skills__icon" alt="ikona monitora z różnymi oknami przeglądarki">
+									<img src="assets/images/icons/workspace-1.svg" class="skills__icon" alt="ikona monitora z różnymi oknami przeglądarki">
 									<h3>Web <br/> Design</h3>
 								</div>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil ratione magni recusandae, voluptates inventore libero repellat quam, impedit hic, animi iure distinctio fugiat enim minima alias voluptates inventore libero repellat quam</p>
+								<p>Tworzenie strony internetowej rozpoczynam od projektu graficznego. Moją pasją jest tworzenie stron, które przyciągają uwagę i jednocześnie są proste. Dbam o to, aby zaprojektowana strona była łatwa w obsłudze oraz angażowała użytkowników. </p>
 							</div>
 							<div class="col-md-6  col-xl-12 skills__item">
 								<div class="skills__item__header">
-									<img src="assets/images/icons/browser.svg" class="skills__icon" alt="ikona okna przeglądarki z symbolem kodowania">
+									<img src="assets/images/icons/devices.svg" class="skills__icon" alt="ikona okna przeglądarki z symbolem kodowania">
 									<h3>Front-end <br/> Development</h3>
 								</div>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor voluptatum ratione fugit beatae et quo tenetur provident velit quisquam veritatis voluptates inventore libero repellat quam voluptates inventore libero repellat quam</p>
+								<p>Kodując stronę internetową skupiam się na tym, aby była w pełni responsywna oraz jak najlepiej zoptymalizowana. Staram się korzystać z najlepszych praktyk oraz nieustannie poszerzam swoją wiedzę.</p>
 							</div>
 						</div>
 					</div>
 					<div class="col-xl-6 offset-xl-1 skills__img">
-						<img sizes="600px" srcset="assets/images/browsers-600.jpg 600w, assets/images/browsers-1200.jpg 1200w" alt="przykładowy projekt strony www">
+						<img sizes="600px" src="assets/images/browsers-600.jpg" srcset="assets/images/browsers-600.jpg 600w, assets/images/browsers-1200.jpg 1200w" alt="przykładowy projekt strony www">
 					</div>
 				</div>
 			</div>
@@ -163,10 +163,10 @@
 									<li class="portfolio-item__icon"><i class="devicon-bootstrap-plain colored"></i></li>
 								</ul>
 								<div class="buttons">
-									<a href="https://andrzej-guzik.github.io/sparta-gym-template" target="_blank" class="btn buttons__item"><span class="btn__icon fa fa-globe" aria-hidden="true"></span>Zobacz</a>
-									<a href="https://github.com/andrzej-guzik/sparta-gym-template" target="_blank" class="btn buttons__item"><span class="btn__icon fa fa-github" aria-hidden="true"></span>GitHub</a>
+									<a href="https://andrzej-guzik.github.io/sparta-gym-template" class="btn buttons__item"><span class="btn__icon fa fa-globe" aria-hidden="true"></span>Zobacz</a>
+									<a href="https://github.com/andrzej-guzik/sparta-gym-template" class="btn buttons__item"><span class="btn__icon fa fa-github" aria-hidden="true"></span>GitHub</a>
 								</div>
-								<img sizes="(min-width: 992px) 800px, 80vw" srcset="assets/images/sparta-gym-showcase-600.jpg 600w, assets/images/sparta-gym-showcase-800.jpg 800w, assets/images/sparta-gym-showcase-1600.jpg 1600w" alt="responsywny widok szablonu www Sparta Gym">
+								<img sizes="(min-width: 992px) 800px, 80vw" src="assets/images/sparta-gym-showcase-800.jpg" srcset="assets/images/sparta-gym-showcase-600.jpg 600w, assets/images/sparta-gym-showcase-800.jpg 800w, assets/images/sparta-gym-showcase-1600.jpg 1600w" alt="responsywny widok szablonu www Sparta Gym">
 							</div>
 
 							<div class="portfolio-item">
@@ -180,10 +180,10 @@
 									<li class="portfolio-item__icon"><i class="devicon-jquery-plain colored" aria-label="jquery"></i></li>
 								</ul>
 								<div class="buttons">
-									<a href="https://andrzej-guzik.github.io/starter-website-template" class="btn buttons__item" target="_blank"><span class="btn__icon fa fa-globe" aria-hidden="true"></span>Zobacz</a>
-									<a href="https://github.com/andrzej-guzik/starter-website-template" target="_blank" class="btn buttons__item"><span class="btn__icon fa fa-github" aria-hidden="true"></span>GitHub</a>
+									<a href="https://andrzej-guzik.github.io/starter-website-template" class="btn buttons__item"><span class="btn__icon fa fa-globe" aria-hidden="true"></span>Zobacz</a>
+									<a href="https://github.com/andrzej-guzik/starter-website-template" class="btn buttons__item"><span class="btn__icon fa fa-github" aria-hidden="true"></span>GitHub</a>
 								</div>
-								<img sizes="(min-width: 992px) 800px, 80vw" srcset="assets/images/starter-showcase-600.jpg 600w, assets/images/starter-showcase-800.jpg 800w, assets/images/starter-showcase-1600.jpg 1600w" alt="responsywny widok szablonu www Starter">
+								<img sizes="(min-width: 992px) 800px, 80vw" src="assets/images/starter-showcase-800.jpg" srcset="assets/images/starter-showcase-600.jpg 600w, assets/images/starter-showcase-800.jpg 800w, assets/images/starter-showcase-1600.jpg 1600w" alt="responsywny widok szablonu www Starter">
 							</div>
 
 							<div class="portfolio-item">
@@ -197,10 +197,10 @@
 									<li class="portfolio-item__icon"><i class="devicon-jquery-plain colored" aria-label="jquery"></i></li>
 								</ul>
 								<div class="buttons">
-									<a href="https://andrzej-guzik.github.io/xavier-website-template" class="btn buttons__item" target="_blank"><span class="btn__icon fa fa-globe" aria-hidden="true"></span>Zobacz</a>
-									<a href="https://github.com/andrzej-guzik/xavier-website-template" class="btn buttons__item" target="_blank"><span class="btn__icon fa fa-github" aria-hidden="true"></span>GitHub</a>
+									<a href="https://andrzej-guzik.github.io/xavier-website-template" class="btn buttons__item"><span class="btn__icon fa fa-globe" aria-hidden="true"></span>Zobacz</a>
+									<a href="https://github.com/andrzej-guzik/xavier-website-template" class="btn buttons__item"><span class="btn__icon fa fa-github" aria-hidden="true"></span>GitHub</a>
 								</div>
-								<img sizes="(min-width: 992px) 800px, 80vw" srcset="assets/images/xavier-showcase-600.jpg 600w, assets/images/xavier-showcase-800.jpg 800w, assets/images/xavier-showcase-1600.jpg 1600w" alt="responsywny widok szablonu www Xavier">
+								<img sizes="(min-width: 992px) 800px, 80vw" src="assets/images/xavier-showcase-800.jpg" srcset="assets/images/xavier-showcase-600.jpg 600w, assets/images/xavier-showcase-800.jpg 800w, assets/images/xavier-showcase-1600.jpg 1600w" alt="responsywny widok szablonu www Xavier">
 							</div>
 
 							<div class="portfolio-item">
@@ -212,10 +212,10 @@
 									<li class="portfolio-item__icon"><i class="devicon-javascript-plain colored" aria-label="javascript"></i></li>
 								</ul>
 								<div class="buttons">
-									<a href="http://utter-coach.surge.sh/" target="_blank" class="btn buttons__item"><span class="btn__icon fa fa-globe" aria-hidden="true"></span>Zobacz</a>
-									<a href="https://github.com/andrzej-guzik/SimpleWeatherApp" target="_blank" class="btn buttons__item"><span class="btn__icon fa fa-github" aria-hidden="true"></span>GitHub</a>
+									<a href="http://utter-coach.surge.sh" class="btn buttons__item"><span class="btn__icon fa fa-globe" aria-hidden="true"></span>Zobacz</a>
+									<a href="https://github.com/andrzej-guzik/SimpleWeatherApp" class="btn buttons__item"><span class="btn__icon fa fa-github" aria-hidden="true"></span>GitHub</a>
 								</div>
-								<img sizes="(min-width: 992px) 800px, 80vw" srcset="assets/images/weather-app-showcase-600.jpg 600w, assets/images/weather-app-showcase-800.jpg 800w, assets/images/weather-app-showcase-1600.jpg 1600w" alt="responsywny widok pogodowej aplikacji www">
+								<img sizes="(min-width: 992px) 800px, 80vw" src="assets/images/weather-app-showcase-800.jpg" srcset="assets/images/weather-app-showcase-600.jpg 600w, assets/images/weather-app-showcase-800.jpg 800w, assets/images/weather-app-showcase-1600.jpg 1600w" alt="responsywny widok pogodowej aplikacji www">
 							</div>
 						</div>
 
@@ -244,7 +244,7 @@
 							</div>
 							<div class="form-group">
 								<label for="email" class="visuallyhidden">Email</label>
-								<input type="email" id="email" name="email" placeholder="Email">
+								<input type="email" id="email" name="email" aria-required="true" placeholder="Email">
 								<div id="email-underline" class="input-underline"></div>
 							</div>
 							<div class="form-group">
@@ -254,7 +254,7 @@
 							</div>
 							<div class="form-group">
 								<label for="message" class="visuallyhidden">Wiadomość</label>
-								<textarea id="message" name="message" placeholder="Wiadomość"></textarea>
+								<textarea id="message" name="message" aria-required="true" placeholder="Wiadomość"></textarea>
 								<div id="message-underline" class="input-underline"></div>
 							</div>
 							<button type="submit">Wyślij Wiadomość</button>
@@ -269,9 +269,9 @@
 			<div class="row">
 				<div class="col-md-6 push-md-6 col-sm-12 site-footer__social">
 					<ul>
-						<li><a href="#"><span class="social-icon fa fa-linkedin" aria-label="linkedin"></span></a></li>
-						<li><a href="#"><span class="social-icon fa fa-github" aria-label="github"></span></a></li>
-						<li><a href="#"><span class="social-icon" aria-label="99designs">99d</span></a></li>
+						<li><a href="https://www.linkedin.com/in/andrzej-guzik"><span class="social-icon fa fa-linkedin" aria-label="linkedin"></span></a></li>
+						<li><a href="https://github.com/andrzej-guzik"><span class="social-icon fa fa-github" aria-label="github"></span></a></li>
+						<li><a href="https://99designs.com/profiles/andyweb"><span class="social-icon" aria-label="99designs">99d</span></a></li>
 					</ul>
 				</div>
 				<div class="col-md-6 pull-md-6 col-sm-12 site-footer__copyright">
@@ -281,7 +281,7 @@
 		</div>
 	</footer>
 	<!-- build:js1 js/vendor.min.js -->
-	<script src="js/vendor/tether.min.js"></script>
+	<script src="temp/js/vendor.js"></script>
 	<!-- endbuild -->
 	<!-- build:js2 js/scripts.min.js -->
 	<script src="temp/js/scripts.js"></script>

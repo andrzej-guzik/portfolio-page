@@ -21,6 +21,11 @@ gulp.task("clearBuild", function() {
 	return del(config.build.dest);
 });
 
+gulp.task("fonts", function() {
+	return gulp.src(config.fonts.src)
+		.pipe(gulp.dest(config.build.fonts));
+});
+
 gulp.task("optimizeImages", function() {
 	return gulp.src(config.images.src)
       .pipe($.imagemin({
@@ -42,4 +47,4 @@ gulp.task("usemin", function() {
 		.pipe(gulp.dest(config.build.dest));
 });
 
-gulp.task("build", gulp.series("clearBuild", "optimizeImages", "build:styles", "usemin"));
+gulp.task("build", gulp.series("clearBuild", "fonts", "optimizeImages", "build:styles", "usemin"));

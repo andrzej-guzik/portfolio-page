@@ -32,6 +32,7 @@
     "gulp-uglify": "^2.0.0",
     "gulp-usemin": "^0.3.27",
     "gulp-watch": "^4.3.11",
+    "html-webpack-plugin": "^2.28.0",
     "imagemin-pngquant": "^5.0.0",
     "require-dir": "^0.3.1",
     "webpack": "^2.2.1"

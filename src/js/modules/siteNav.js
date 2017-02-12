@@ -6,7 +6,7 @@ class SiteNav {
 		this.menuIcon = document.querySelector(".site-header__menu-icon");
 		this.siteNav = document.querySelector(".site-nav");
 		this.siteLinks = $(".site-nav a");
-		this.addSmothScrolling();
+		this.addSmothScrolling({offset: -64});
 		this.events();
 	}
 

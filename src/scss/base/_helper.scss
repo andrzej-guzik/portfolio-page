@@ -1,10 +1,26 @@
 .visuallyhidden {
 	position: absolute;
+	border: none;
 	width: 1px;
     height: 1px;
 	overflow: hidden;
 	margin: -1px;
  	padding: 0;
 	clip: rect(0 0 0 0);
-	clip: rect(0, 0, 0, 0);  
+	clip: rect(0, 0, 0, 0);
+
+	&:focus {
+		position: static;
+		clip: auto;
+	    height: auto;
+	    margin: 0;
+	    overflow: visible;
+	    width: auto;
+	}
+}
+
+a.visuallyhidden {
+	background: $accent-color;
+	color: $white;
+	padding: 2rem;
 }
