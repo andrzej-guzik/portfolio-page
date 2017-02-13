@@ -3,18 +3,17 @@
 	z-index: -2;
 	position: fixed;
 	top: 2rem;
-	transform: translateX(60%);
+	width: 100%;
 	transition: all .3s cubic-bezier(.94,.22,.19,.76);
 
 	@include media-breakpoint-up(lg) {
 		opacity: 1;
 		z-index: 999;
-		width: 100%;
-		transform: translateX(0);
 
-		&--dark {
+		&--fixed {
 			background: $white;
 			top: 0;
+			padding: 1rem;
 		}
 	}
 
@@ -22,11 +21,10 @@
 		opacity: 1;
 		z-index: 99;
 		background: rgba($accent-color, .99);
-		width: 85%;
+
 		height: 100%;
 		top: 0;
 		right: 0;
-		transform: translateX(0);
 		padding: 2rem 0;
 	}
 
@@ -105,7 +103,7 @@
 			}
 		}
 	}
-	
+
 	@include media-breakpoint-up(lg) {
 		a.is-active {
 			color: $accent-color;

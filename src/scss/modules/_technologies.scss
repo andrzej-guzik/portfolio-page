@@ -2,18 +2,31 @@
 	background: url("../assets/images/bg_tech.jpg") top center;
 	background-size: cover;
 
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+
+		list-style: none;
+		margin: 0;
+		margin-top: 1rem;
+		padding: 0;
+	}
+
 	h2 {
 		@include section-number("02");
 	}
 
 	&__icon {
-		padding: 1.2rem;
+		padding: .5rem;
+		margin-bottom: .5rem;
+		flex-shrink: 0;
 
 		@include media-breakpoint-up(sm) {
-			padding: 2rem;
+			padding: 1.3rem;
 		}
 
-		@include media-breakpoint-up(md) {
+		@include media-breakpoint-up(lg) {
+			padding: 1.5rem;
 			margin-bottom: 1rem;
 		}
 	}
@@ -21,7 +34,6 @@
 	.tech-icon {
 		stroke: $accent-color;
 		stroke-width: 2;
-		stroke-dasharray: 1000;
 		stroke-dashoffset: 1000;
 	}
 
@@ -31,15 +43,18 @@
 
 	&--drawing {
 		path {
-			animation: offset 3s .3s linear forwards, fill-it 1s 3s forwards;
+			animation: offset 3s .3s linear forwards, fill-it 3s .3s forwards;
 		}
 	}
 }
 
 //Animations for tech icons
 @keyframes offset {
-  100% {
-    stroke-dashoffset: 0;
+	0% {
+		stroke-dasharray: 1000;
+	}
+	100% {
+		stroke-dashoffset: 0;
   }
 }
 

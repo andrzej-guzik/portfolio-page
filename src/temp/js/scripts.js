@@ -1023,10 +1023,10 @@ var SiteNav = function () {
 	function SiteNav() {
 		_classCallCheck(this, SiteNav);
 
-		this.menuIcon = document.querySelector(".site-header__menu-icon");
+		this.menuIcon = document.querySelector(".menu-icon");
 		this.siteNav = document.querySelector(".site-nav");
 		this.navTrigger = document.querySelector(".hero__content");
-		this.siteSections = document.querySelectorAll("section");
+		this.siteSections = document.querySelectorAll("#home, section");
 		this.siteLinks = (0, _jquery2.default)(".site-nav a");
 		this.addSmothScrolling({ offset: -64 });
 		this.stickyNav();
@@ -1038,7 +1038,7 @@ var SiteNav = function () {
 		key: "closeNav",
 		value: function closeNav() {
 			this.siteNav.classList.remove("site-nav--is-expanded");
-			this.menuIcon.classList.remove("site-header__menu-icon--close");
+			this.menuIcon.classList.remove("menu-icon--close");
 		}
 	}, {
 		key: "addSmothScrolling",
@@ -1063,7 +1063,7 @@ var SiteNav = function () {
 
 			if (!hasClass) {
 				this.siteNav.classList.add("site-nav--is-expanded");
-				this.menuIcon.classList.add("site-header__menu-icon--close");
+				this.menuIcon.classList.add("menu-icon--close");
 				return;
 			}
 
@@ -1077,9 +1077,9 @@ var SiteNav = function () {
 				element: that.navTrigger,
 				handler: function handler(direction) {
 					if (direction === "down") {
-						that.siteNav.classList.add("site-nav--dark");
+						that.siteNav.classList.add("site-nav--fixed");
 					} else {
-						that.siteNav.classList.remove("site-nav--dark");
+						that.siteNav.classList.remove("site-nav--fixed");
 					}
 				},
 				offset: "300"

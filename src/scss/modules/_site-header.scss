@@ -1,11 +1,33 @@
 .site-header {
-	&__menu-icon {
+	position: relative;
+	background: url("../assets/images/bg-hero-800.jpg") no-repeat center center;
+	background-size: cover;
+	width: 100%;
+	min-height: 25rem;
+
+	@include media-breakpoint-down(sm) {
+		padding-top: vr(4);
+		@include overlay(black, .4);
+	}
+
+	@include media-breakpoint-up(md) {
+		background: url("../assets/images/bg-hero.jpg") no-repeat left center;
+	}
+
+	@include media-breakpoint-up(lg) {
+		max-height: 845px;
+		height: 100%;
+	}
+	.menu-icon {
 		width: 40px;
 		height: 30px;
 		position: absolute;
 		z-index: 999;
 		top: 17px;
 		right: 25px;
+		background: transparent;
+		border: none;
+		outline: none;
 		cursor: pointer;
 
 		@include media-breakpoint-up(lg) {
@@ -60,7 +82,7 @@
 	    }
 	}
 
-	&__menu-icon--close {
+	.menu-icon--close {
 	    &:before {
 			background: darken($light, 10%);
 			transform: rotate(45deg);
@@ -71,7 +93,7 @@
 			transform: rotate(-45deg) translateY(1px);
 	    }
 
-		.site-header__menu-icon__middle {
+		.menu-icon__middle {
 			opacity: 0;
 			transform: scaleX(0);
 	    }

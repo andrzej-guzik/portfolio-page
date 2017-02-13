@@ -3,10 +3,10 @@ import smoothScroll from "jquery-smooth-scroll";
 
 class SiteNav {
 	constructor() {
-		this.menuIcon = document.querySelector(".site-header__menu-icon");
+		this.menuIcon = document.querySelector(".menu-icon");
 		this.siteNav = document.querySelector(".site-nav");
 		this.navTrigger = document.querySelector(".hero__content");
-		this.siteSections = document.querySelectorAll("section");
+		this.siteSections = document.querySelectorAll("#home, section");
 		this.siteLinks = $(".site-nav a");
 		this.addSmothScrolling({offset: -64});
 		this.stickyNav();
@@ -16,7 +16,7 @@ class SiteNav {
 
 	closeNav() {
 		this.siteNav.classList.remove("site-nav--is-expanded");
-		this.menuIcon.classList.remove("site-header__menu-icon--close");
+		this.menuIcon.classList.remove("menu-icon--close");
 	}
 
 	addSmothScrolling() {
@@ -38,7 +38,7 @@ class SiteNav {
 
 		if (!hasClass) {
 			this.siteNav.classList.add("site-nav--is-expanded");
-			this.menuIcon.classList.add("site-header__menu-icon--close");
+			this.menuIcon.classList.add("menu-icon--close");
 			return;
 		}
 
@@ -51,9 +51,9 @@ class SiteNav {
 			element: that.navTrigger,
 			handler: (direction) => {
 				if (direction === "down") {
-					that.siteNav.classList.add("site-nav--dark");
+					that.siteNav.classList.add("site-nav--fixed");
 				} else {
-					that.siteNav.classList.remove("site-nav--dark");
+					that.siteNav.classList.remove("site-nav--fixed");
 				}
 
 			},
