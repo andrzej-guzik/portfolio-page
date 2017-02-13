@@ -1,8 +1,8 @@
 .site-nav {
 	opacity: 0;
 	z-index: -2;
-	position: absolute;
-	top: 2.5rem;
+	position: fixed;
+	top: 2rem;
 	transform: translateX(60%);
 	transition: all .3s cubic-bezier(.94,.22,.19,.76);
 
@@ -11,6 +11,11 @@
 		z-index: 999;
 		width: 100%;
 		transform: translateX(0);
+
+		&--dark {
+			background: $white;
+			top: 0;
+		}
 	}
 
 	&--is-expanded {
@@ -85,7 +90,6 @@
 				padding: 1rem;
 
 				&:hover, &:focus  {
-					background: rgba($white, .7);
 					border-top: 2px solid $accent-color;
 					color: $accent-color;
 					outline: none;
@@ -99,6 +103,13 @@
 			@include media-breakpoint-up(lg) {
 				display: none;
 			}
+		}
+	}
+	
+	@include media-breakpoint-up(lg) {
+		a.is-active {
+			color: $accent-color;
+			font-weight: 400;
 		}
 	}
 }

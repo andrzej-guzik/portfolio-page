@@ -1,8 +1,9 @@
 .animate-item {
 	@include media-breakpoint-up(xl) {
 		opacity: 0;
-		transform: translateY(50%) rotateZ(45deg) rotateY(90deg);
+		transform: translateY(10%);
 		transition: all .8s ease-in;
+
 		&--is-visible {
 			opacity: 1;
 			transform: translateY(0);

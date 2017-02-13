@@ -5,8 +5,12 @@ class SiteNav {
 	constructor() {
 		this.menuIcon = document.querySelector(".site-header__menu-icon");
 		this.siteNav = document.querySelector(".site-nav");
+		this.navTrigger = document.querySelector(".hero__content");
+		this.siteSections = document.querySelectorAll("section");
 		this.siteLinks = $(".site-nav a");
 		this.addSmothScrolling({offset: -64});
+		this.stickyNav();
+		this.activeLinks();
 		this.events();
 	}
 
@@ -40,6 +44,57 @@ class SiteNav {
 
 		this.closeNav();
 	}
+
+	stickyNav() {
+		const that = this;
+		new Waypoint({
+			element: that.navTrigger,
+			handler: (direction) => {
+				if (direction === "down") {
+					that.siteNav.classList.add("site-nav--dark");
+				} else {
+					that.siteNav.classList.remove("site-nav--dark");
+				}
+
+			},
+			offset: "300"
+		});
+	}
+
+	activeLinks() {
+		const that = this;
+		[...this.siteSections].map((section) => {
+			new Waypoint({
+				element: section,
+				handler: (direction) => {
+					if (direction === "down") {
+						const linkId = section.dataset.link;
+						const matchingLink = document.querySelector(linkId);
+						[...that.siteLinks].map((item) => {
+							item.classList.remove("is-active");
+						});
+						matchingLink.classList.add("is-active");
+					}
+				},
+				offset: "15%"
+			});
+			new Waypoint({
+				element: section,
+				handler: (direction) => {
+					if (direction === "up") {
+						const linkId = section.dataset.link;
+						const matchingLink = document.querySelector(linkId);
+						[...that.siteLinks].map((item) => {
+							item.classList.remove("is-active");
+						});
+						matchingLink.classList.add("is-active");
+					}
+				},
+				offset: "-70"
+			});
+		});
+	}
+
 }
 
 export default SiteNav;
